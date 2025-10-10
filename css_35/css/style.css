@@ -1,0 +1,33 @@
+.first_font {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 300;
+    font-style: italic;
+
+}
+
+.second_font {
+    text-decoration: line-through;
+}
+
+.third_font {
+    text-indent: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.fourth_font {
+    text-decoration: overline;
+    text-decoration-style: wavy;
+    text-shadow: 1px 1px 1px #cd88ec;
+    word-spacing: 30px;
+
+}
+
+.fifth_font {
+    letter-spacing: 5px;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
