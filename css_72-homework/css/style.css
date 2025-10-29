@@ -1,0 +1,44 @@
+body {
+    background: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+}
+
+
+/* ================================================ */
+
+
+.homework {
+    max-height: 1000px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.homework__title {
+    position: relative;
+}
+
+.homework__title::after {
+    content: '';
+    position: absolute;
+    transform: translate(50%, 3%);
+    width: 75px;
+    height: 75px;
+    background: #0400ff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.homework__title::before {
+    content: '';
+    position: absolute;
+    transform: translate(-150%, 3%);
+    width: 75px;
+    height: 75px;
+    background: #ff0000;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
