@@ -1,0 +1,64 @@
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+}
+
+
+
+.rotate {
+    border: 2px dashed #000000;
+    border-radius: 15px;
+    display: inline-block;
+    background: #ffffff;
+    height: 100%;
+    width: 50%;
+}
+
+.translate__blocks {
+    display: block;
+}
+
+.rotate__blocks {
+
+    display: block;
+}
+
+.red,
+.blue,
+.green,
+.red-invis,
+.blue-invis,
+.green-invis {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.red {
+    background: linear-gradient(120deg, #ff0000, #e07c7c);
+}
+
+.green {
+    background: linear-gradient(120deg, #15ff00, #95f388);
+}
+
+.blue {
+    background: linear-gradient(120deg, #0026ff, #80afee);
+}
+
+.red-invis,
+.blue-invis,
+.green-invis {
+    border: 2px dashed #909090;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #a3a3a3;
+}
