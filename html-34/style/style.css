@@ -1,0 +1,29 @@
+table {
+    font-family: sans-serif;
+    border-collapse: collapse;
+}
+
+td,
+th,
+caption {
+    border: 1px solid #000;
+    padding: 4px;
+}
+
+
+caption {
+    font-weight: 900;
+}
+
+
+thead {
+    font-weight: 600;
+}
+
+tbody {
+    font-weight: 400;
+}
+
+.holiday {
+    color: #ff0000;
+}
