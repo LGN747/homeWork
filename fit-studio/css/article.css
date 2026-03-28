@@ -1,27 +1,3 @@
-html {
-    font-family: Ubuntu, sans-serif;
-    font-weight: 400;
-}
-
-body * {
-    box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-.container {
-    max-width: 1250px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 .article {
     padding-top: 80px;
@@ -52,12 +28,16 @@ p {
 }
 
 
-.article-text {
-    margin-bottom: 20px;
+.article-text  {
+      margin-bottom: 20px;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
     color: #535755;
+}
+
+.article-text:last-child {
+    margin-bottom: 0px;
 }
 
 .article-decor-wrapper {
@@ -79,15 +59,16 @@ p {
 }
 
 .article-decor-wrapper-2::before {
-    right:  -350px;
+    right: -350px;
     bottom: 136px;
 }
+
 .article-mb-1 {
     margin-bottom: 80px;
 }
 
-.article-mb-2{
-margin-bottom: 40px;
+.article-mb-2 {
+    margin-bottom: 40px;
 }
 
 .article-img,
@@ -101,18 +82,18 @@ margin-bottom: 40px;
     padding-left: 16px;
 }
 
-.article-item {
+.article-item:not(:last-child) {
     margin-bottom: 12px;
 }
 
-.article-item::marker{
+.article-item::marker {
     font-size: 22px;
     color: #3596ed;
 
 
 }
 
-.article-play-button{
+.article-play-button {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -120,11 +101,11 @@ margin-bottom: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-background-color: #3596ed;
-border: none;
-padding: 0;
-height: 60px;
+    background-color: #3596ed;
+    border: none;
+    padding: 0;
+    height: 60px;
     width: 60px;
-border-radius: 50%;
-cursor: pointer;
+    border-radius: 50%;
+    cursor: pointer;
 }
