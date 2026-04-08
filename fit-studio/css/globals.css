@@ -6,16 +6,30 @@ html {
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-width: 375px;
     min-height: 100vh;
 }
 
@@ -33,6 +47,7 @@ a,
 button {
     outline: none;
 }
+
 
 .container {
     max-width: 1250px;
@@ -58,6 +73,8 @@ button {
     text-align: center;
     color: #fff;
     background-color: #3596ed;
+    -webkit-transition: opacity 0.2s, background-color 0.2s;
+    -o-transition: opacity 0.2s, background-color 0.2s;
     transition: opacity 0.2s, background-color 0.2s;
 
 }
@@ -111,9 +128,60 @@ section {
     color: #858e8a;
 }
 
+.decor::before {
+    content: "";
+    position: absolute;
+    top: 215px;
+    z-index: -1;
+    width: calc(50% - 250px);
+    height: 48px;
+    background: url("../images/decor-icon.svg") repeat-x;
+}
+
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible {
     outline: 2px solid #3596ed;
     outline-offset: 1px;
+}
+
+@media (width <=992px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (width <=768px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .title-large {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .title-medium {
+        font-size: 22px;
+    }
+
+    .home-page .title-large {
+        max-width: inherit;
+        text-align: center;
+    }
+}
+
+@media (width <=576px) {
+    section {
+        margin-bottom: 80px;
+    }
+
+    .title-large {
+        font-size: 32px;
+    }
+
+    .title-medium {
+        font-size: 18px;
+    }
+
 }

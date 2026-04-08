@@ -27,14 +27,7 @@
     position: relative;
 }
 
-.article-decor-wrapper::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: url(../images/decor-icon.svg) no-repeat;
-    width: 528px;
-    height: 48px;
-}
+
 
 .article-decor-wrapper-1::before {
     left: -350px;
@@ -54,11 +47,7 @@
     margin-bottom: 40px;
 }
 
-.article-img,
-.article-video {
-    width: 100%;
 
-}
 
 .article-list {
     margin-top: 0;
@@ -80,10 +69,18 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #3596ed;
     border: none;
     padding: 0;
@@ -91,6 +88,8 @@
     width: 60px;
     border-radius: 50%;
     cursor: pointer;
+    -webkit-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
     transition: background-color 0.2s;
 }
 
@@ -100,4 +99,51 @@
 
 .article-play-button:not(:disabled):active {
     background-color: #2d82cd;
+}
+
+@media (width <=768px) {
+    .article-decor-wrapper-1::before {
+        display: none;
+    }
+
+    .article-title-medium {
+        font-size: 32px;
+    }
+
+    .article-mb-1 {
+        margin-bottom: 60px;
+    }
+
+}
+
+@media (width <=576px) {
+    .article {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .article-title-medium {
+        font-size: 32px;
+    }
+
+    .article-mb-1 {
+        margin-bottom: 40px;
+    }
+
+    .article-mb-2 {
+        margin-bottom: 30px;
+    }
+
+    .article-play-button {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .article-play-button img {
+        width: 17px;
+        height: 20px;
+
+    }
+
 }
