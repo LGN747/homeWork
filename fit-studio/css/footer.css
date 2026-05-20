@@ -14,13 +14,13 @@
             rgba(252, 124, 217, 0.2) 100%);
 }
 
-.footer-top {
+.footer__top {
     padding-bottom: 40px;
     margin-bottom: 40px;
     border-bottom: 1px solid #d3cbd9;
 }
 
-.footer-logo {
+.footer__logo {
     display: inline-block;
     margin-bottom: 40px;
 }
