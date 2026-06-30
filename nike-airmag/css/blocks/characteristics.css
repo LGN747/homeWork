@@ -25,22 +25,35 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translate(-50%, -50%);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: var(--overlay-color);
-    box-shadow: var(--shadow-glow), inset var(--shadow-glow);
+    background-color: #2a2a2980;
+    -webkit-box-shadow: var(--shadow-glow), inset var(--shadow-glow);
+            box-shadow: var(--shadow-glow), inset var(--shadow-glow);
     border: 1px solid var(--main-color);
+    -webkit-transition: border-color var(--transition-time), -webkit-box-shadow var(--transition-time);
+    transition: border-color var(--transition-time), -webkit-box-shadow var(--transition-time);
     transition: border-color var(--transition-time), box-shadow var(--transition-time);
+    transition: border-color var(--transition-time), box-shadow var(--transition-time), -webkit-box-shadow var(--transition-time);
 }
 
 
 
 @media (any-hover: hover) {
     .characteristics__video-play-link:hover {
-        box-shadow: var(--shadow-accent-glow), inset var(--shadow-accent-glow);
+        -webkit-box-shadow: var(--shadow-accent-glow), inset var(--shadow-accent-glow);
+                box-shadow: var(--shadow-accent-glow), inset var(--shadow-accent-glow);
         border-color: var(--accent-color);
     }
 
@@ -56,7 +69,9 @@
     .characteristics__video-play-icon {
         width: 17px;
         height: 24px;
-        transform: translateX(2px);
+        -webkit-transform: translateX(2px);
+            -ms-transform: translateX(2px);
+                transform: translateX(2px);
 
     }
 }
@@ -72,12 +87,15 @@
     .characteristics__video-play-icon {
         width: 10px;
         height: 13px;
-        transform: translateX(1px);
+        -webkit-transform: translateX(1px);
+            -ms-transform: translateX(1px);
+                transform: translateX(1px);
 
     }
 }
 
 .characteristics__list {
+    display: -ms-grid;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     gap: 40px 20px;
@@ -86,7 +104,9 @@
 
 .characteristics__card-icon {
     margin-bottom: 4px;
-    transform: translateX(-8px);
+    -webkit-transform: translateX(-8px);
+        -ms-transform: translateX(-8px);
+            transform: translateX(-8px);
 }
 
 
