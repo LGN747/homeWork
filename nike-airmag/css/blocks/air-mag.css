@@ -3,18 +3,20 @@
 }
 
 @media (width > 576px) {
-    .air-mag{
+    .air-mag {
         padding-bottom: 93px;
     }
+
     .air-mag__title {
         margin-bottom: 10px;
     }
 }
 
-@media (width <= 576px) {
-     .air-mag{
+@media (width <=576px) {
+    .air-mag {
         padding-bottom: 80px;
     }
+
     .air-mag__title {
         margin-bottom: 13px;
     }
